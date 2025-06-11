@@ -1,0 +1,162 @@
+/* Grund-Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body & Fonts */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1e1e1e;
+    color: #eee;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Header */
+  header {
+    background-color: #2c6f3c;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    color: #d8f3dc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  }
+  
+  /* Navigation */
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #d8f3dc;
+    font-weight: 700;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: #3a9342;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a:focus {
+    background-color: #67b26f;
+    color: #1e1e1e;
+    outline: none;
+  }
+  
+  /* Hauptbereich */
+  main {
+    flex-grow: 1;
+    padding: 25px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+  }
+  
+  /* Content-Box für alle Seiten */
+  .content-box {
+    background-color: #2c2c2c;
+    padding: 20px 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #3a9342cc;
+  }
+  
+  /* Überschriften */
+  h1, h2 {
+    font-family: 'Press Start 2P', cursive;
+    color: #a3d9a5;
+    margin-bottom: 15px;
+  }
+  
+  h3 {
+    color: #8cc98c;
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+  
+  /* Absätze */
+  p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+  }
+  
+  /* Bilder */
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 15px 0;
+    box-shadow: 0 0 10px #3a9342aa;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Eingebettete Videos */
+  .video-box {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #3a9342cc;
+    margin-top: 25px;
+  }
+  
+  .video-box iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 12px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #2c6f3c;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 0.9rem;
+    color: #d8f3dc;
+    box-shadow: 0 -4px 8px rgba(0,0,0,0.4);
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  footer a {
+    color: #a3d9a5;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  
+  footer a:hover,
+  footer a:focus {
+    color: #67b26f;
+    outline: none;
+  }
+  
+  /* Responsive Schriftgrößen */
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    nav ul li a {
+      padding: 8px 12px;
+      font-size: 0.85rem;
+    }
+  }
+  
